@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Museum of My Babooshka Shanaya </title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- ========================= -->
+<!-- Floating Background -->
+<!-- ========================= -->
+
+<div class="floating-hearts" id="floatingHearts"></div>
+<div class="sparkles"></div>
+
+<!-- ========================= -->
+<!-- Music Button -->
+<!-- ========================= -->
+
+<button id="musicBtn" aria-label="Toggle background music">🎵</button>
+
+<audio id="bgMusic" loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">A little corner made with love</p>
+
+        <h1>
+            The Museum
+            <span>of My Babooshka  ❤️</span>
+        </h1>
+
+        <p>
+            Every picture, every memory, every laugh, every little moment...
+            deserves a place in my heart and u deserve all of it. This museum is a small token of my love for you. 
+        </p>
+
+        <a href="#museum" class="enter-btn">Enter The Museum of my Love  →</a>
+
+    </div>
+
+    <div class="scroll-cue">↓</div>
+
+</header>
+
+<!-- ========================= -->
+<!-- MUSEUM -->
+<!-- ========================= -->
+
+<section id="museum">
+
+    <div class="container">
+
+        <h2 class="reveal">The Most Beautiful Exhibit</h2>
+
+        <div class="glass-card reveal">
+
+            <h3>You ❤️</h3>
+
+            <p>
+                If someone ever asked me what my favorite place is...
+                I'd probably say wherever you are.
+                You've made ordinary moments feel extraordinary .... everymoment i have spent with you has been special and made me love you more .
+                This little museum exists because every memory with you deserves its own exhibit.........MWAAAHHH...........
+                ( IN MY HIDDEN FOLDER which is my heart for you BABE).
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CAROUSEL -->
+<!-- ========================= -->
+
+<section id="gallery">
+
+    <h2 class="reveal">Our Journey 📸</h2>
+    <p class="reveal">Every photo tells a story. I have alot but here are some of my favourites.</p>
+
+    <div class="carousel reveal">
+
+        <button class="prev" aria-label="Previous photo">❮</button>
+
+        <div class="slides">
+
+            <div class="slide active">
+                <img src="images/photo1.png" alt="Our beginning" onerror="this.style.display='none'">
+                <div class="caption">Our Beginning ❤️</div>
+            </div>
+
+            <div class="slide">
+                <img src="images/photo2.png" alt="Our favourite day" onerror="this.style.display='none'">
+                <div class="caption">My Favourite Picture 🌸</div>
+            </div>
+
+            <div class="slide">
+                <img src="images/photo3.png" alt="Smiles I'll never forget" onerror="this.style.display='none'">
+                <div class="caption">The Smiles I'll Never Forget ☀️</div>
+            </div>
+
+            <div class="slide">
+                <img src="images/photo4.png" alt="Another beautiful memory" onerror="this.style.display='none'">
+                <div class="caption">Another Beautiful Memory ✨</div>
+            </div>
+
+            <div class="slide">
+                <img src="images/photos5.png" alt="Forever starts here" onerror="this.style.display='none'">
+                <div class="caption">Us is Special ❤️</div>
+            </div>
+
+        </div>
+
+        <button class="next" aria-label="Next photo">❯</button>
+
+    </div>
+
+    <div class="dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- LETTER -->
+<!-- ========================= -->
+
+<section class="letter-section">
+
+    <h2 class="reveal">One Last Surprise...</h2>
+    <p class="reveal">Some words are better read than spoken.</p>
+
+    <div class="letter-wrapper reveal">
+
+        <div class="envelope" id="envelope">
+            <div class="flap"></div>
+            <div class="front"></div>
+            <div class="seal">❤️</div>
+        </div>
+
+    </div>
+
+    <p class="open-text reveal">👇 Click the Envelope 👇</p>
+
+</section>
+
+<div class="letter-overlay" id="letterOverlay"></div>
+
+<div class="letter-paper" id="letterPaper">
+    <button class="close-letter" id="closeLetter" aria-label="Close letter">✕</button>
+    <div id="typewriter">
+        <h2>Happy Birthday ❤️</h2>
+        <p id="typedText"></p>
+    </div>
+</div>
+
+<!-- ========================= -->
+<!-- FINAL -->
+<!-- ========================= -->
+
+<section class="birthday">
+
+    <h1 class="reveal">Happy Birthday</h1>
+    <h2 class="reveal">My Love ❤️</h2>
+
+    <p class="reveal">
+        I hope this birthday is filled with smiles, love, and beautiful memories.
+        I love you more than words can ever explain.
+        I hope my kisses and hugs reach you and make you feel loved on your special day.
+        Forever mine and me yours. ❤️
+    </p>
+
+    <button id="celebrate">Celebrate 🎉</button>
+
+</section>
+
+<!-- ========================= -->
+<!-- Confetti -->
+<!-- ========================= -->
+
+<canvas id="confetti"></canvas>
+
+<!-- ========================= -->
+<!-- Fireworks -->
+<!-- ========================= -->
+
+<div id="fireworks"></div>
+
+<!-- ========================= -->
+<!-- Footer -->
+<!-- ========================= -->
+
+<footer>
+    Made with an unreasonable amount of love for you mwaaaaah ❤️
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
